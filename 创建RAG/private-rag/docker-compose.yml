@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+
+  chroma:
+    image: chromadb/chroma
+    container_name: chroma
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./chroma:/chroma/chroma
